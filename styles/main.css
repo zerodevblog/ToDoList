@@ -1,0 +1,121 @@
+.app {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 190px;
+}
+
+.form {
+  border-bottom: 1px solid #efe3ff;
+  padding: 24px 0;
+  background-color: #ffffff;
+}
+
+input {
+  background: #ffffff;
+  border: 1px solid #3e1671;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-family: "Comfortaa", cursive;
+  flex: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  max-width: 476px;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.habbit__form {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 0px 10px 0 25px;
+  position: relative;
+}
+
+.input_icon {
+  padding-left: 20px;
+}
+
+.input__icon {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+}
+
+.button {
+  background: #9e78cf;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  line-height: 14px;
+  color: #ffffff;
+  padding: 9px 15px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #9761de;
+}
+
+.task-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#taskContainer {
+  max-width: 600px;
+
+}
+
+.task {
+  background: #ffffff;
+  border: 1px solid #3e1671;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-family: "Comfortaa", cursive;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 540px;
+}
+
+.task .task-text {
+  flex-grow: 1;
+  color: #3e1671;
+}
+
+.task .task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task .task-actions .complete,
+.task .task-actions .delete {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: #3e1671;
+}
+
+.task .task-actions .complete:hover,
+.task .task-actions .delete:hover {
+  color: #9761de;
+}
+
+.task-header{
+  display: flex;
+  margin-left: 25px;
+}

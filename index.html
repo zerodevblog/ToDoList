@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Title</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <div class="app">
+    <div class="form">
+      <form class="habbit__form" onsubmit="addTask(event)">
+        <input name="comment" class="input_icon" type="text" placeholder="Add a new task" />
+        <button class="button" type="submit">
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.0516 11C20.0516 11.1823 19.9779 11.3572 19.8468 11.4861C19.7157 11.6151 19.5379 11.6875 19.3525 11.6875H12.3614V18.5625C12.3614 18.7448 12.2877 18.9197 12.1566 19.0486C12.0255 19.1776 11.8477 19.25 11.6623 19.25C11.4769 19.25 11.2991 19.1776 11.1679 19.0486C11.0368 18.9197 10.9632 18.7448 10.9632 18.5625V11.6875H3.97209C3.78668 11.6875 3.60886 11.6151 3.47775 11.4861C3.34664 11.3572 3.27298 11.1823 3.27298 11C3.27298 10.8177 3.34664 10.6428 3.47775 10.5139C3.60886 10.3849 3.78668 10.3125 3.97209 10.3125H10.9632V3.4375C10.9632 3.25516 11.0368 3.0803 11.1679 2.95136C11.2991 2.82243 11.4769 2.75 11.6623 2.75C11.8477 2.75 12.0255 2.82243 12.1566 2.95136C12.2877 3.0803 12.3614 3.25516 12.3614 3.4375V10.3125H19.3525C19.5379 10.3125 19.7157 10.3849 19.8468 10.5139C19.9779 10.6428 20.0516 10.8177 20.0516 11Z"
+              fill="white" />
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Заголовок и счетчик задач -->
+    <div class="task-header">
+      <h2>Tasks to do - <span id="taskCount">0</span></h2>
+    </div>
+
+    <!-- Контейнер для задач -->
+    <div id="taskContainer"></div>
+    <div class="delete-buttons">
+      <button onclick="deleteCompletedTasks()">Delete Done</button>
+      <button onclick="deleteAllTasks()">Delete All</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
